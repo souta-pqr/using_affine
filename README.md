@@ -14,3 +14,15 @@
 
 ```bash
 pip install -r requirements.txt
+
+## 使い方
+
+1. まず、`create_rotating_gif`関数を呼び出します。この関数は、元の画像のパス、出力GIFのパス、およびGIFに含めるフレーム数を引数に取ります。
+
+    ```python
+    create_rotating_gif("data/one.jpg", "data/rotating.gif", 30)
+    ```
+
+2. この関数を呼び出すと、元の画像が少しずつ回転しながら変換され、それぞれの結果が一時的な画像として保存されます。
+
+3. 最後に、これらの一時的な画像が組み合わせられてGIFが作成されます。
